@@ -1,0 +1,33 @@
+.footer {
+    padding: 20px 5.6vw;
+    background-color: #13151d;
+    margin-bottom: 30px
+}
+
+.footer__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+@media(max-width: 768px) {
+    .footer__content {
+        display:block;
+        align-items: center;
+        text-align: center
+    }
+}
+
+.footer__content__image__facebook {
+    height: 40px
+}
+
+.footer__content__image__youtube {
+    height: 40px;
+    margin-left: 10px;
+    margin-right: 10px
+}
+
+.footer__content__image__whatsApp {
+    height: 40px
+}

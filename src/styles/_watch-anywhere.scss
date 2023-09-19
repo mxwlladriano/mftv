@@ -1,0 +1,53 @@
+.watch-anywhere {
+    padding: 5.6vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    margin-bottom: 200px
+}
+
+@media(max-width: 768px) {
+    .watch-anywhere {
+        grid-template-columns:1fr;
+        margin-bottom: 100px
+    }
+}
+
+@media(max-width: 1180px) {
+    .watch-anywhere {
+        grid-template-columns:1fr;
+        margin-bottom: 100px
+    }
+}
+
+.watch-anywhere img {
+    max-width: 100%
+}
+
+@media(max-width: 1180px) {
+    .watch-anywhere img {
+        margin-bottom:50px
+    }
+}
+
+.watch-anywhere__text_container {
+    padding: 0 2vw
+}
+
+@media(max-width: 768px) {
+    .watch-anywhere__text_container {
+        margin-top:10px;
+        text-align: center
+    }
+}
+
+@media(max-width: 1180px) {
+    .watch-anywhere__text_container {
+        margin-top:10px;
+        text-align: center
+    }
+}
+
+.watch-anywhere h2 {
+    margin-bottom: 24px
+}
