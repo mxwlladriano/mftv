@@ -6,9 +6,27 @@
     align-items: center;
     text-align: center;
 
+
+    @media(max-width:768px){
+        header{
+            display: none;
+        }
+        
+    }
+    
+
+
     &__content{
         display: flex;
         justify-content: space-between;
+
+
+        
+        @media(max-width:768px){
+            &__content{
+                display: none;
+            }
+        }
 
         &__image{
             height: 40px;
@@ -22,6 +40,11 @@
             display: flex;
             align-items: center;
             gap: 10px;
+
+            @media(max-width:768px) {
+                margin-left: 20px;
+                
+            }
 
             &__item{
                 margin: 0 10px;
