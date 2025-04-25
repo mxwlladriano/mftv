@@ -119,49 +119,7 @@ body {
     cursor: pointer
 }
 
-.button--teste {
-    padding: 10px;
-    text-align: center;
-    width: 100%;
-    height: 60px;
-    font-size: 18px;
-    background-color: green;
-    text-transform: uppercase;
-    border-radius: 4px;
-    margin-bottom: 0;
-    border: 0;
-    cursor: pointer
-}
 
-@media(max-width: 768px) {
-    .button--teste {
-        padding:8px;
-        height: 50px;
-        font-size: 15px
-    }
-}
-
-.button--revenda {
-    padding: 10px;
-    text-align: center;
-    width: 100%;
-    height: 60px;
-    font-size: 18px;
-    background-color: #008075;
-    text-transform: uppercase;
-    border-radius: 4px;
-    margin-bottom: 0;
-    border: 0;
-    cursor: pointer
-}
-
-@media(max-width: 768px) {
-    .button--revenda {
-        padding:8px;
-        height: 50px;
-        font-size: 15px
-    }
-}
 
 .link {
     text-decoration: none;

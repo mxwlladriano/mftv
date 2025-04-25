@@ -1,41 +1,124 @@
 @use 'variavel';
 
-.combo-telas{
-    margin-top: 45px;
+.combo-telas {
+  margin-top: 45px;
+
+  @media (max-width: 768px) {
+    margin-top: 0;
+    max-width: 80%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
+.combo-tela-2 {
+  margin-bottom: 11px;
 
-.combo-tela-2{
-    margin-bottom: 11px;
-}
-
-.combo-tela-3{
+  @media (max-width: 768px) {
     margin-bottom: 5px;
-
-    @media (max-width:768px){
-        margin-bottom: 13px;
-    }
+  }
 }
 
-.ll{
+.combo-tela-3 {
+  margin-bottom: 3px;
 
-    @media (max-width:768px){
-        margin-top: 18px;
+  @media (max-width: 768px) {
+    margin-bottom: 5px;
+  }
+}
+
+.ll {
+  @media (max-width: 768px) {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero__content__combos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 28px;
+
+    &__combo {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+
+      .button {
+        margin-top: 8px;
+      }
+
+      .text {
+        margin-top: 4px;
+        font-size: 14px;
+      }
     }
+  }
 }
 
 
 
-.hero{
+
+.hero {
+    position: relative;
     padding: 5.6vw;
     min-height: 80vh;
-    background-image: url(../images/hero/hero_desktop.jpeg);
     text-align: center;
-    background-size: cover;
-
-    @media (max-width:1180px){
-        background-image: none;
+    overflow: hidden;
+  
+    .hero__slide {
+      position: absolute;
+      inset: 0;
+      background-size: cover;
+      background-position: center;
+      opacity: 0;
+      animation: fadeHero 25s infinite;
+      transition: opacity 1s ease-in-out;
+      z-index: -1;
     }
+  
+    .hero__slide:nth-child(1) {
+      background-image: url('../images/hero/minecraft_adjusted_v2.jpg');
+      animation-delay: 0s;
+    }
+  
+    .hero__slide:nth-child(2) {
+      background-image: url('../images/hero/futebol_brasileiro.webp');
+      animation-delay: 5s;
+    }
+  
+    .hero__slide:nth-child(3) {
+      background-image: url('../images/hero/moana.webp');
+      animation-delay: 10s;
+    }
+  
+    .hero__slide:nth-child(4) {
+      background-image: url('../images/hero/futebol_europeu.webp');
+      animation-delay: 15s;
+    }
+  
+    .hero__slide:nth-child(5) {
+      background-image: url('../images/hero/capas.webp');
+      animation-delay: 20s;
+    }
+  
+    @keyframes fadeHero {
+      0% { opacity: 1; }
+      17% { opacity: 1; }
+      20% { opacity: 0; }
+      100% { opacity: 0; }
+    }
+  
+    @media (max-width: 1180px) {
+      .hero__slide {
+        display: none;
+      }
+    }
+  
 
 
     &__content{
