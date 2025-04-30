@@ -7,57 +7,58 @@
     <link rel="stylesheet" href="./dist/css/main.css">
 </head>
 <body>
-<header class="header">
-    <div class="header__content">
-        <img class="header__content__image" src="./dist/images/logo/logo_header.png" alt="MFTV">
-        <div class="header__content__list">
-            <h1 class="header__content__list__chamada_1">Assista tudo em um clique</h1>
-            <p class="header__content__list__chamada_2">Converse no WhatsApp e comece já</p>
-            <button class="button-whatsapp">
-                <i class="fab fa-whatsapp icon"></i> Chamar no WhatsApp
-              </button>
+    <header class="hero-header">
+        <div class="header-container">
+            <img src="./dist/images/logo/logo_header.png" alt="Logo" class="logo" />
+          <div class="text-content">
+            <h1>Assista ao melhor conteúdo online</h1>
+            <p>Filmes, séries e canais ao vivo na palma da sua mão.</p>
+            <a href="https://wa.me/seunumero" class="whatsapp-button" target="_blank">Fale conosco no WhatsApp</a>
+          </div>
         </div>
+      </header>
+      
+<section class="hero">
+    <!-- Slides de fundo -->
+    <div class="hero__slide" style="background-image: url('./dist/images/hero/minecraft_adjusted_v2.jpg'); animation-delay: 0s;"></div>
+    <div class="hero__slide" style="background-image: url('./dist/images/hero/futebol_brasileiro.webp'); animation-delay: 5s;"></div>
+    <div class="hero__slide" style="background-image: url('./dist/images/hero/moana.webp'); animation-delay: 10s;"></div>
+    <div class="hero__slide" style="background-image: url('./dist/images/hero/futebol_europeu.webp'); animation-delay: 15s;"></div>
+    <div class="hero__slide" style="background-image: url('./dist/images/hero/capas.webp'); animation-delay: 20s;"></div>
+  
+    <!-- Conteúdo principal -->
+    <div class="hero__content">
+      <h3 class="title--small">As melhores histórias em um só lugar</h3>
+  
+      <p>
+        <a href="http://wa.me/5511972925757" class="link-text">Ver opções</a> <br>
+        <span class="text">
+          R$ 30,00/mês ou R$ 299,00/ano à vista*
+        </span>
+      </p>
+  
+      <ul class="hero__content__combos">
+        <li class="hero__content__combos__combo">
+          <img class="combo-telas combo-tela-2" src="./dist/images/hero/COMBO_2_TELAS.png" alt="Combo 2 telas">
+          <button class="button">
+            <a class="link" href="http://wa.me/5511972925757">Assine agora</a>
+          </button>
+          <span class="text">R$ 50,00/mês</span>
+        </li>
+        <li class="hero__content__combos__combo ll">
+          <img class="combo-telas combo-tela-3" src="./dist/images/hero/COMBO_3_TELAS.png" alt="Combo 3 telas">
+          <button class="button">
+            <a class="link" href="http://wa.me/5517972925757">Assine agora</a>
+          </button>
+          <span class="text">R$ 75,00/mês (R$ 25 cada)</span>
+        </li>
+      </ul>
+  
+      <p class="text--small">
+        *O preço pode variar de acordo com a quantidade de telas contratadas.
+      </p>
     </div>
-</header>
-
-    <section class="hero">
-        <div class="">
-            <div class="hero__slide"></div>
-            <div class="hero__slide"></div>
-            <div class="hero__slide"></div>
-            <div class="hero__slide"></div>
-            <div class="hero__slide"></div>
-          
-            <!-- Seus textos, logo e botão continuam aqui normalmente -->
-          
-        <div class="hero__content">
-            <h3 class="title--small">
-                As melhores histórias em um só lugar
-            </h3>
-            <p>
-                <a href="http://wa.me/5511972925757" class="link-text">Ver opções</a> <br>
-                <span class="text">
-                    R$ 30,00/mês ou R$ 299,00/ano à vista*
-                </span>
-            </p>
-            <ul class="hero__content__combos">
-                <li class="hero__content__combos__combo">
-                    <img class="combo-telas combo-tela-2" src="./dist/images/hero/COMBO_2_TELAS.png" alt="">
-                    <button class="button"><a class="link" href="http://wa.me/5511972925757">Assine agora</a></button>
-                    <span class="text">R$ 50,00/mês</span>
-                </li>
-                <li class="hero__content__combos__combo ll">
-                    <img class="combo-telas combo-tela-3" src="./dist/images/hero/COMBO_3_TELAS.png" alt="Combo 2 telas">
-                    <button class="button"><a class="link" href="http://wa.me/5517972925757">Assine agora</a></button>
-                    <span class="text">3 telas por R$ 75,00/mês (R$ 25 cada)</span>
-                </li>
-            </ul>
-            <p class="text--small">
-                *O preço pode variar de acordo com a quantidade de telas contratadas.
-            </p>
-        </div>
-    </div>
-    </section>
+  </section>
     <section class="plans">
         <h2 class="title--big">Escolha seu plano</h2>
         <ul class="plans__list">
@@ -85,7 +86,7 @@
         </p>
     </section>
     <section class="watch-anywhere">
-        <img src="." alt="Assista do seu jeito">
+        <img src="./dist/images/watch/whatch.png" alt="Assista do seu jeito">
         <div class="watch-anywhere__text_container">
             <h2 class="title--big">Assista do seu jeito</h2>
             <p class="text--big">Aproveite a tela grande da smart tv ou assista ultilizando TV box, computador, celular e outros aparelhos com conexão á internet. Nossa seleção de títulos não param de crescer. Além disso, para felicidade de todos é possivel assistir em mais de uma tela ao mesmo tempo contratando qualquer combo.</p>

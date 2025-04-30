@@ -115,7 +115,8 @@
   
     @media (max-width: 1180px) {
       .hero__slide {
-        display: none;
+        aspect-ratio: 16/9;
+        max-height: 90vh;
       }
     }
   
@@ -123,6 +124,7 @@
 
     &__content{
         max-width: 640px;
+        margin-top: 100px;
 
         &__branding{
             max-width: 320px;

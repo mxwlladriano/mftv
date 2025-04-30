@@ -1,109 +1,68 @@
-.header{
-    background-color: #13151d;
-    padding: 20px 100px;
-    position: sticky;
-    top: -1px;
+.hero-header {
+    background: linear-gradient(to bottom, #000000, #000b1e);
+    color: white;
+    padding: 20px 5%;
+  }
+  
+  .header-container {
+    display: flex;
     align-items: center;
+    flex-wrap: nowrap;   /* Não empilha no desktop */
+    width: 100%;         /* Ocupa a largura total */
+  }
+  
+  .logo {
+    max-width: 160px;    /* Tamanho menor da logo */
+    height: auto;
+    flex-shrink: 0;
+  }
+  
+  .text-content {
+    flex: 1;
+    padding-left: 600px;
+    min-width: 200px;
     text-align: center;
-    z-index: 2;
-    
-
-
-    &__content{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-
-        &__image{
-            max-height: 150px; /* Ou o valor que achar ideal */
-            height: auto;
-
-            @media (max-width:768px){
-                max-height: 100px; /* Ou o valor que achar ideal */
-                height: auto;
-                margin-left: -80px;
-                
-                
-            }
-        }
-
-        &__list{
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-
-        &__chamada_1{
-            font-size: 30px;
-            font-weight: bold;
-            color: #fff;
-
-            @media (max-width:768px){
-                font-size: 11px;
-            }
-        }
-        
-        &__chamada_2{
-            font-size: 20px;
-            font-weight: bold;
-            color: #fff;
-
-            @media (max-width:768px){
-                font-size: 8px;
-            }
-        }
-
-        .button-whatsapp {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background-color: #25D366; /* Cor de fundo do WhatsApp */
-            color: #ffffff; /* Cor do texto */
-            padding: 15px 23px; /* Espaçamento interno */
-            border-radius: 8px; /* Bordas arredondadas */
-            font-weight: bold; /* Texto em negrito */
-            font-size: 2rem; /* Tamanho da fonte */
-            cursor: pointer;
-            transition: background-color 0.3s, transform 0.2s; /* Transições suaves para hover */
-            border: none; /* Remover bordas */
-
-            @media (max-width:768px){
-                font-size: 10px;
-            }
-            
-            /* Ícone do WhatsApp à esquerda do texto */
-            .icon {
-              margin-right: 8px; /* Distância entre o ícone e o texto */
-              font-size: 2rem; /* Tamanho do ícone */
-              @media (max-width:768px){
-                font-size: 20px;
-            }
-            }
-          
-            &:hover {
-              background-color: #1ebe5b; /* Cor do fundo no hover (verde mais escuro) */
-              transform: scale(1.05); /* Leve aumento ao passar o mouse */
-            }
-          
-            &:active {
-              transform: scale(0.98); /* Leve redução quando clicar */
-            }
-
-            
-        }
-
-            &__item{
-                margin: 0 10px;
-
-                a{
-                    text-decoration: none;
-                }
-            }
-
-            @media (max-width:768px){
-                margin-right: -80px;
-                
-            }
-        }
-
+  }
+  
+  .text-content h1 {
+    font-size: 1.2rem;   /* Texto menor e mais proporcional */
+    margin: 0 0 8px 0;
+  }
+  
+  .text-content p {
+    font-size: 0.9rem;
+    margin: 0 0 12px 0;
+  }
+  
+  .whatsapp-button {
+    display: inline-block;
+    background-color: #25d366;
+    color: #000;
+    padding: 10px 16px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9rem;
+    transition: background 0.3s ease;
+  }
+  
+  .whatsapp-button:hover {
+    background-color: #1ebe5d;
+  }
+  
+  /* Responsivo: empilha ao centro no mobile */
+  @media (max-width: 768px) {
+    .header-container {
+      flex-direction: column;
+      text-align: center;
     }
-}
+    .text-content {
+      padding-left: 0;
+      margin-top: 16px;
+      text-align: center;
+    }
+    .logo {
+      max-width: 300px;
+    }
+  }
+  
